@@ -1,1 +1,22 @@
-<p>sdg works!</p>
+<div class="container">
+
+  <div class="heading mat-elevation-z4">
+
+    <span>
+      <h3>SDG #{{data.number}}</h3>
+      <mat-icon (click)="close()">close</mat-icon>
+    </span>
+
+    <h1>{{data.title}}</h1>
+
+  </div>
+
+  <div class="content">
+
+    <div *ngFor="let element of data.elements" class="section mat-elevation-z1">
+      <p>{{element}}</p>
+    </div>
+
+  </div>
+
+</div>

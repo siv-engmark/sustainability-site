@@ -1,0 +1,50 @@
+// Goes in Card Component
+mat-card {
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+  font-family: "Poppins";
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+p.caption {
+  font-family: "Poppins";
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.56);
+  font-weight: 300;
+}
+
+h1 {
+  padding: 2rem 1rem 1rem 1rem;
+  font-weight: 300;
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+mat-card p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  padding-bottom: 1rem;
+}
+
+mat-card-actions {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: -1rem;
+  p {
+    margin: 0px;
+    flex: 1 1 auto;
+  }
+}

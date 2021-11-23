@@ -1,1 +1,16 @@
-<p>info-card works!</p>
+<h1>{{data.heading}}</h1>
+
+<mat-card>
+
+  <img mat-card-image [src]="data.image" alt="Photo of a Shiba Inu">
+
+  <h2>{{data.title}}</h2>
+
+  <p>{{data.description}}</p>
+
+  <mat-card-actions (click)="openBottomSheet(data.sdg_number)" matRipple *ngIf="data.caption">
+    <p class="caption">{{data.caption}}</p>
+    <mat-icon>expand_less</mat-icon>
+  </mat-card-actions>
+
+</mat-card>
