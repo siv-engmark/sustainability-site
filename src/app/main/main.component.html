@@ -1,0 +1,11 @@
+<!-- Swiper is responsible for sliding each card left and right -->
+<swiper [config]="config" [pagination]="true">
+  <!-- Each slide that the swiper slides between - one is created for each info card in the database -->
+  <ng-template *ngFor="let slide of info_card_list | async" swiperSlide>
+
+    <!-- The component that shows the information from the database, for each info card -->
+    <app-info-card [data]="slide"></app-info-card>
+
+  </ng-template>
+
+</swiper>

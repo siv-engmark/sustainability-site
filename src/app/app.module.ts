@@ -18,12 +18,14 @@ import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { SwiperModule } from 'swiper/angular';
 import { InfoCardComponent } from './info-card/info-card.component';
 import { SdgComponent } from './sdg/sdg.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InfoCardComponent,
-    SdgComponent
+    SdgComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
