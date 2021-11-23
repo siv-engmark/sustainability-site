@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sustainability-info-site": {
+      "hosting": {
+        "sustainability-site": [
+          "sustainability-info-site"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sustainability-info-site"
+  }
+}
