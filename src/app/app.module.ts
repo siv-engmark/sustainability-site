@@ -7,10 +7,14 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InfoCardComponent } from './info-card/info-card.component';
+import { SdgComponent } from './sdg/sdg.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InfoCardComponent,
+    SdgComponent
   ],
   imports: [
     BrowserModule,
