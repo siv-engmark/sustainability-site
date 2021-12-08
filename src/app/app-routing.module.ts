@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'table1' },
+  { path: '', pathMatch: 'full', redirectTo: 'havebord' },
   { path: ':id', component: MainComponent },
 ];
 

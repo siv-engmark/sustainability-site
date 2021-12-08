@@ -11,6 +11,9 @@ import { Observable, of, switchMap } from 'rxjs';
 import { DataService } from '../data.service';
 import { InfoCardData } from '../info-card/info-card.component';
 
+// install Swiper modules
+SwiperCore.use([Pagination]);
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',

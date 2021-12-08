@@ -11,6 +11,7 @@ export interface InfoCardData {
   caption?: string;
   order?: number;
   sdg_number?: string;
+  tagline?: string;
 }
 
 @Component({

@@ -2,11 +2,13 @@
 
 <mat-card>
 
-  <img mat-card-image [src]="data.image" alt="Photo of a Shiba Inu">
+  <img [class.tagline]="data.tagline" mat-card-image [src]="data.image" alt="Photo of a Shiba Inu">
 
-  <h2>{{data.title}}</h2>
+  <h2 *ngIf="data.title">{{data.title}}</h2>
 
-  <p>{{data.description}}</p>
+  <h3 *ngIf="data.tagline">{{data.tagline}}</h3>
+
+  <p *ngIf="data.description">{{data.description}}</p>
 
   <mat-card-actions (click)="openBottomSheet(data.sdg_number)" matRipple *ngIf="data.caption">
     <p class="caption">{{data.caption}}</p>
